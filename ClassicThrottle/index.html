@@ -1,4 +1,3 @@
-<?php include('includes/navbar.html'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,30 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index Page</title>
     <style>
-        /* Reset default margin dan padding */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
-            flex-direction: column; /* Tata letak vertikal */
-            min-height: 100vh; /* Pastikan body memenuhi tinggi layar */
+            flex-direction: column;
+            min-height: 100vh;
         }
 
-        /* Kontainer utama */
         .content {
-            flex: 1; /* Isi ruang di antara navbar dan footer */
+            flex: 1;
             padding: 20px;
             text-align: center;
         }
 
-        /* Styling tambahan jika diperlukan */
+        iframe {
+            border: none;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
+    <!-- Navbar -->
+    <iframe src="includes/navbar.html" height="60px"></iframe>
 
-    
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Welcome to the Classic Throttle</h1>
+        <p>This is the index page content.</p>
+    </div>
 
+    <!-- Footer -->
+    <iframe src="includes/footer.html" height="60px"></iframe>
 </body>
 </html>
-<?php include('includes/footer.html'); ?>
